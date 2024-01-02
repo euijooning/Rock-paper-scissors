@@ -25,15 +25,34 @@ const choice = {
 }
 function App() {
   const [userSelect, setUserSelect] = useState(null);
+  const [computerSelect, setComputerSelect] = useState(null);
   const play = (userChoice) => {
     // userSelect = choice[userChoice] 이거 안 됨.
     setUserSelect(choice[userChoice])
+    let computerChoice = randomChoice(); // 새로운 함수를 만들어준다.
+
+    // 이제 마지막으로 값 집어넣어주기
+    setComputerSelect(computerChoice);
+  };
+
+  const randomChoice = () => {
+    // 배열화시키기위한 작업
+    let itemArray = Object.keys(choice)
+    // console.log("item array", itemArray)
+
+    let randomItem = Math.floor(Math.random() * itemArray.length) ; // 여기에 추가
+    // console.log("random value", randomItem)
+    let final = itemArray[randomItem];
+    // console.log("final", final);
+    return choice[final]; // 이제 얘가 computerChoice 안으로 쏙 들어간다.
   }
+
+
   return (
     <div>
       <div className='main'>
         <Box title = "You" item={userSelect} />
-        {/* <Box title = "Computer" /> */}
+        <Box title = "Computer" item={computerSelect} />
       </div>
       <div className='main'>
         <button onClick={() => play("scissors")}>가위</button>
