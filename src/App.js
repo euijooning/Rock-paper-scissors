@@ -1,5 +1,6 @@
 import './App.css';
 import Box from './component/Box';
+import { useState } from 'react'
 
 // 1. 박스 2개(타이틀, 사진, 결과)
 // 2. 가위/바위/보 버튼
@@ -23,14 +24,16 @@ const choice = {
   }
 }
 function App() {
+  const [userSelect, setUserSelect] = useState(null);
   const play = (userChoice) => {
-    console.log("선택됨!", userChoice);
+    // userSelect = choice[userChoice] 이거 안 됨.
+    setUserSelect(choice[userChoice])
   }
   return (
     <div>
       <div className='main'>
-        <Box title = "You" />
-        <Box title = "Computer" />
+        <Box title = "You" item={userSelect} />
+        {/* <Box title = "Computer" /> */}
       </div>
       <div className='main'>
         <button onClick={() => play("scissors")}>가위</button>
