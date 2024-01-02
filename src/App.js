@@ -12,15 +12,15 @@ import { useState } from 'react'
 const choice = {
   rock: {
     name: "Rock",
-    img: "https://nationaltoday.com/wp-content/uploads/2021/08/National-Pet-Rock-Day.jpg",
+    img: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fb19BZT%2FbtsCP6b2ojn%2FecttfsCpod47GqIrUtjFVK%2Fimg.png",
   },
   scissors: {
     name: "Scissors",
-    img: "https://www.tefal.co.kr/medias/?context=bWFzdGVyfGltYWdlc3wzMTM3MHxpbWFnZS9qcGVnfGltYWdlcy9oMjgvaDc4LzE2MjU1MjQwODMxMDA2LmpwZ3xiYzhjMzQ5ODEwM2JhYTRiYWFmYzBhZDBkMDFhNjYzNWY1NDBkMzc1OWZhM2FjZDg0ZjAwM2MzZTE3OTU2N2Zi",
+    img: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbXW2ZO%2FbtsCTyljodQ%2F8vPyYYY5kIWNkrABw4QKr1%2Fimg.png",
   },
   paper: {
     name: "Paper",
-    img: "https://www.hobbycraft.co.uk/dw/image/v2/BHCG_PRD/on/demandware.static/-/Sites-hobbycraft-uk-master/default/dw8aedf2d1/images/large/584769_1000_1_-white-premium-smooth-paper-a4-100-pack.jpg?sw=680&q=85",
+    img: "https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2Fl9eNi%2FbtsCOAEilJI%2FmtEnQ9ixvm0AegzgpigKi0%2Fimg.png",
   }
 }
 function App() {
